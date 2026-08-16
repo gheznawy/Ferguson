@@ -166,7 +166,6 @@
   .about-experience__cards, .about-audiences__grid { grid-template-columns: 1fr; }
   .about-philosophy { padding-block: var(--space-6); }
   .about-audiences article { padding: var(--space-3); }
-  .contact-hero .trust-signals { display: grid; gap: 0; text-align: left; }
   .contact-next ol { grid-template-columns: 1fr; gap: var(--space-5); }
   .contact-next ol::before { display: none; }
   .contact-area ul { grid-template-columns: 1fr; }
@@ -177,8 +176,6 @@
   .plan-price p > span:first-of-type { display: none; }
   .plan-care { padding-block: var(--space-6); }
   .plan-care li { align-items: flex-start; font-size: 1.25rem; }
-  .plan-trust .trust-signals { grid-template-columns: 1fr; }
-  .plan-trust .trust-signals li { justify-content: flex-start; border-right: 0; border-bottom: 1px solid var(--border); }
   .plan-conversion__summary { align-items: center; flex-direction: column; }
   .plan-conversion__summary > span { display: none; }
   .plan-conversion__card { padding: var(--space-4) var(--space-3); }

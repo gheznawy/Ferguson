@@ -194,6 +194,8 @@ Phase 13 is complete. All 25 launch routes have passed final visual, responsive,
 
 ## Last Meaningful Update
 
+**2026-08-17** — Updated the shared `TrustSignals` component so every recurring trust treatment becomes a smooth, CSS-only horizontal loop on mobile. The duplicate animation list is hidden from assistive technology; reduced-motion users receive a clean static wrapping row. Desktop and tablet layouts remain unchanged. Verified the Homepage at 390px and 1440px with no horizontal overflow, confirmed all 18 routes using the component return the trust markup, then ran lint, typecheck, and production build successfully.
+
 **2026-08-17** — Updated the mobile hamburger Services and Service Area rows so the text links open their hub pages while the separate chevron buttons expand and collapse the existing nested links. Desktop navigation remains unchanged.
 
 **2026-08-17** — Refined page-refresh behavior so a reload from lower on a page briefly restores that position and then quickly scrolls smoothly to the top, while initial loads and normal in-site navigation still start at the top. Reduced-motion preferences use an immediate return.

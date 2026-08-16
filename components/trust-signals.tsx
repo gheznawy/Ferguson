@@ -19,14 +19,21 @@ type TrustSignalsProps = {
 };
 
 export function TrustSignals({ items = defaultTrustSignals, variant = "grid", inverse = false }: TrustSignalsProps) {
+  const signalItems = items.map((item) => (
+    <li key={item.label}>
+      <Icon name={item.icon} width={22} height={22} />
+      <span>{item.label}</span>
+    </li>
+  ));
+
   return (
-    <ul className={`trust-signals trust-signals--${variant}${inverse ? " trust-signals--inverse" : ""}`}>
-      {items.map((item) => (
-        <li key={item.label}>
-          <Icon name={item.icon} width={22} height={22} />
-          <span>{item.label}</span>
-        </li>
-      ))}
-    </ul>
+    <div className={`trust-signals trust-signals--${variant}${inverse ? " trust-signals--inverse" : ""}`}>
+      <div className="trust-signals__viewport">
+        <div className="trust-signals__track">
+          <ul className="trust-signals__list">{signalItems}</ul>
+          <ul className="trust-signals__list" aria-hidden="true">{signalItems}</ul>
+        </div>
+      </div>
+    </div>
   );
 }

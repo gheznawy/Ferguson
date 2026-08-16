@@ -326,7 +326,6 @@
   .service-detail-hero__lead { font-size: 1rem; }
   .service-detail-hero__actions { flex-direction: column; }
   .service-detail-hero__actions .button { width: 100%; }
-  .service-detail-hero .trust-signals { display: grid; gap: 0; }
   .service-detail-hero__visual { min-height: 470px; padding: 0; }
   .service-detail-hero__photo { inset: var(--space-2); }
   .service-detail-hero__badge { right: var(--space-3); bottom: var(--space-3); left: var(--space-3); padding: 10px 12px; }
