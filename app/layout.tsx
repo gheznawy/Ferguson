@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 
 import whiteIcon from "../Selected-Pictures-for-Website/Logos/White-Icon.png";
 import { businessName, getSiteUrl } from "@/lib/seo";
@@ -30,7 +31,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
-      <body>{children}</body>
+      <body>
+        <Script id="reset-scroll-on-load" strategy="beforeInteractive">
+          {"if ('scrollRestoration' in history) history.scrollRestoration = 'manual'; window.scrollTo(0, 0);"}
+        </Script>
+        {children}
+      </body>
     </html>
   );
 }

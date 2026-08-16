@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 import { Icon } from "./icons";
 import { MobileNavigation, type NavigationItem } from "./mobile-navigation";
@@ -84,8 +87,35 @@ type SiteHeaderProps = {
 };
 
 export function SiteHeader({ activePath = "" }: SiteHeaderProps) {
+  const [isHidden, setIsHidden] = useState(false);
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const updateHeaderVisibility = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY <= 80) {
+        setIsHidden(false);
+        lastScrollY = currentScrollY;
+        return;
+      }
+
+      if (currentScrollY > lastScrollY + 8) {
+        setIsHidden(true);
+        lastScrollY = currentScrollY;
+      } else if (currentScrollY < lastScrollY - 4) {
+        setIsHidden(false);
+        lastScrollY = currentScrollY;
+      }
+    };
+
+    window.addEventListener("scroll", updateHeaderVisibility, { passive: true });
+    return () => window.removeEventListener("scroll", updateHeaderVisibility);
+  }, []);
+
   return (
-    <header className="site-header">
+    <header className={`site-header${isHidden ? " site-header--hidden" : ""}`}>
       <div className="site-container site-header__inner">
         <SiteLogo />
         <nav className="desktop-navigation" aria-label="Primary navigation">

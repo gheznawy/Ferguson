@@ -177,11 +177,17 @@ textarea {
 }
 
 .site-header {
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 20;
   border-bottom: 1px solid var(--border);
   background: var(--page-bg);
   box-shadow: 0 4px 16px rgb(0 20 48 / 4%);
+  transition: transform 180ms ease;
+}
+
+.site-header--hidden {
+  transform: translateY(-100%);
 }
 
 .site-header__inner {
@@ -454,7 +460,11 @@ textarea {
   border-right: 0;
   border-left: 0;
   background: transparent;
-  font: inherit;
+  color: var(--ferguson-navy-800);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.5;
   text-align: left;
   cursor: pointer;
 }
@@ -1718,4 +1728,6 @@ textarea {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
+
+  .site-header { transition: none; }
 }

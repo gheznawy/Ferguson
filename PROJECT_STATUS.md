@@ -194,6 +194,8 @@ Phase 13 is complete. All 25 launch routes have passed final visual, responsive,
 
 ## Last Meaningful Update
 
+**2026-08-17** — Added sitewide top-of-page restoration on page load and a sticky header that hides after downward scrolling, reappears on a slight upward scroll, and hides again when scrolling down on both desktop and mobile. Mobile Services and Service Area menu triggers now use the same Inter type treatment as the other hamburger options. Verified with lint, typecheck, and a production build.
+
 **2026-08-17** — Added 24px of mobile-only breathing room below the Homepage hero trust signals, so the final Licensed & Insured item no longer sits against the quote-form band. Verified at 390px with no horizontal overflow; tablet and desktop remain unchanged.
 
 **2026-08-17** — Updated the Homepage hero on mobile only so the image-backed hero ends after the headline, copy, CTAs, and trust signals. The existing quote form now sits in a full-width clean light-gray band with its original fields, styling, and behavior preserved; desktop and tablet layout rules are unchanged.
