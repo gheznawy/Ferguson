@@ -194,6 +194,8 @@ Phase 13 is complete. All 25 launch routes have passed final visual, responsive,
 
 ## Last Meaningful Update
 
+**2026-08-17** — Changed the mobile hamburger Services and Service Area items back to direct links to their respective hub pages. Desktop dropdown navigation remains unchanged.
+
 **2026-08-17** — Refined page-refresh behavior so a reload from lower on a page briefly restores that position and then quickly scrolls smoothly to the top, while initial loads and normal in-site navigation still start at the top. Reduced-motion preferences use an immediate return.
 
 **2026-08-17** — Added sitewide top-of-page restoration on page load and a sticky header that hides after downward scrolling, reappears on a slight upward scroll, and hides again when scrolling down on both desktop and mobile. Mobile Services and Service Area menu triggers now use the same Inter type treatment as the other hamburger options. Verified with lint, typecheck, and a production build.
