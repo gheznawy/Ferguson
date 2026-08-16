@@ -58,16 +58,26 @@ export function MobileNavigation({ items }: MobileNavigationProps) {
               const submenuId = `mobile-navigation-${item.label.toLowerCase().replaceAll(/[^a-z]+/g, "-")}`;
               return (
                 <div className="mobile-navigation__item" key={item.href}>
-                  <button
-                    className="mobile-navigation__submenu-trigger"
-                    type="button"
-                    aria-expanded={expanded}
-                    aria-controls={submenuId}
-                    onClick={() => setExpandedItems((current) => ({ ...current, [item.href]: !expanded }))}
-                  >
-                    {item.label}
-                    <Icon className="mobile-navigation__chevron" name="chevron-down" width={18} height={18} />
-                  </button>
+                  <div className="mobile-navigation__submenu-row">
+                    <Link
+                      className="mobile-navigation__submenu-link"
+                      href={item.href}
+                      aria-current={active ? "page" : undefined}
+                      onClick={() => setOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                    <button
+                      className="mobile-navigation__submenu-trigger"
+                      type="button"
+                      aria-expanded={expanded}
+                      aria-controls={submenuId}
+                      aria-label={`${expanded ? "Collapse" : "Expand"} ${item.label} links`}
+                      onClick={() => setExpandedItems((current) => ({ ...current, [item.href]: !expanded }))}
+                    >
+                      <Icon className="mobile-navigation__chevron" name="chevron-down" width={18} height={18} />
+                    </button>
+                  </div>
                   <ul className={`mobile-navigation__submenu${expanded ? " is-open" : ""}`} id={submenuId}>
                     {item.children?.map((child) => {
                       const childActive = child.href === "/" ? pathname === "/" : pathname === child.href;

@@ -58,6 +58,30 @@ const serviceAreaNavigation = [
   { href: "/service-area/suffolk-va/", label: "Eastern Suffolk" },
 ];
 
+const mobileNavigation = primaryNavigation.map((item) => {
+  if (item.href === "/services/") {
+    return {
+      ...item,
+      children: [
+        ...serviceNavigation.flatMap((group) => group.items),
+        { href: "/services/", label: "View All Services" },
+      ],
+    };
+  }
+
+  if (item.href === "/service-area/") {
+    return {
+      ...item,
+      children: [
+        ...serviceAreaNavigation,
+        { href: "/service-area/", label: "View Full Service Area" },
+      ],
+    };
+  }
+
+  return item;
+});
+
 type SiteHeaderProps = {
   activePath?: string;
 };
@@ -164,7 +188,7 @@ export function SiteHeader({ activePath = "" }: SiteHeaderProps) {
           </a>
           <ButtonLink href="/contact/">Get a Free Quote</ButtonLink>
         </div>
-        <MobileNavigation items={primaryNavigation} />
+        <MobileNavigation items={mobileNavigation} />
       </div>
     </header>
   );

@@ -194,7 +194,7 @@ Phase 13 is complete. All 25 launch routes have passed final visual, responsive,
 
 ## Last Meaningful Update
 
-**2026-08-17** — Changed the mobile hamburger Services and Service Area items back to direct links to their respective hub pages. Desktop dropdown navigation remains unchanged.
+**2026-08-17** — Updated the mobile hamburger Services and Service Area rows so the text links open their hub pages while the separate chevron buttons expand and collapse the existing nested links. Desktop navigation remains unchanged.
 
 **2026-08-17** — Refined page-refresh behavior so a reload from lower on a page briefly restores that position and then quickly scrolls smoothly to the top, while initial loads and normal in-site navigation still start at the top. Reduced-motion preferences use an immediate return.
 
