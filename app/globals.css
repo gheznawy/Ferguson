@@ -1620,6 +1620,7 @@ textarea {
   .home-hero__image { object-position: 62% center; }
   .home-hero__overlay { background: linear-gradient(90deg, rgb(0 20 48 / 91%) 0%, rgb(0 20 48 / 76%) 100%); }
   .home-hero__inner { gap: 0; padding-bottom: 0; }
+  .home-hero__content { padding-bottom: var(--space-3); }
   .home-hero__form-area {
     width: calc(100% + (2 * var(--gutter-mobile)));
     margin-inline: calc(-1 * var(--gutter-mobile));
