@@ -33,7 +33,33 @@ export default function RootLayout({
     <html lang="en" data-scroll-behavior="smooth">
       <body>
         <Script id="reset-scroll-on-load" strategy="beforeInteractive">
-          {"if ('scrollRestoration' in history) history.scrollRestoration = 'manual'; window.scrollTo(0, 0);"}
+          {`(() => {
+            const scrollPositionKey = "ferguson-scroll-position";
+            const navigationEntry = performance.getEntriesByType("navigation")[0];
+            const isReload = navigationEntry?.type === "reload";
+
+            window.addEventListener("pagehide", () => {
+              sessionStorage.setItem(scrollPositionKey, String(window.scrollY));
+            });
+
+            if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+
+            const savedScrollY = Number(sessionStorage.getItem(scrollPositionKey));
+            if (!isReload || !Number.isFinite(savedScrollY) || savedScrollY <= 0) {
+              window.scrollTo(0, 0);
+              return;
+            }
+
+            window.scrollTo(0, savedScrollY);
+            requestAnimationFrame(() => {
+              requestAnimationFrame(() => {
+                window.scrollTo({
+                  top: 0,
+                  behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+                });
+              });
+            });
+          })();`}
         </Script>
         {children}
       </body>
