@@ -194,4 +194,8 @@ Phase 13 is complete. All 25 launch routes have passed final visual, responsive,
 
 ## Last Meaningful Update
 
+**2026-08-17** — Updated the Homepage hero on mobile only so the image-backed hero ends after the headline, copy, CTAs, and trust signals. The existing quote form now sits in a full-width clean light-gray band with its original fields, styling, and behavior preserved; desktop and tablet layout rules are unchanged.
+
+**2026-08-17** — Updated the mobile hamburger navigation so Services and Service Area are accessible expandable controls with rotating chevrons, 44px nested submenu links, and the exact existing desktop submenu destinations. Verified open/close behavior, keyboard interaction and Escape focus return, route navigation, menu closure after navigation, and no horizontal overflow at 390px and 320px; desktop navigation remains unchanged.
+
 **2026-08-17** — Completed Phase 13 final QA. Verified all 25 public routes across desktop, tablet, 390px mobile, and 320px narrow-mobile layouts; compared every approved page directly with its references; tested navigation, dropdowns, mobile menu, forms, disclosures, Gallery, maps, accessibility structure, focus visibility, links, production runtime, lint, typecheck, and build. Improved mobile tap areas and shortened related-service card minimums. Deployment, form-receiver, final CTA wording, operating-day, live-review, and legal-approval decisions remain intentionally unresolved.

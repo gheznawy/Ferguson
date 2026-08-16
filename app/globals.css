@@ -435,7 +435,8 @@ textarea {
   display: grid;
 }
 
-.mobile-navigation__panel nav a {
+.mobile-navigation__panel nav > a,
+.mobile-navigation__submenu-trigger {
   min-height: 48px;
   padding: 12px 4px;
   border-bottom: 1px solid var(--border);
@@ -444,7 +445,64 @@ textarea {
   text-decoration: none;
 }
 
-.mobile-navigation__panel nav a[aria-current="page"] {
+.mobile-navigation__submenu-trigger {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  background: transparent;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.mobile-navigation__chevron {
+  flex: 0 0 auto;
+  transition: transform 160ms ease;
+}
+
+.mobile-navigation__submenu-trigger[aria-expanded="true"] .mobile-navigation__chevron {
+  transform: rotate(180deg);
+}
+
+.mobile-navigation__submenu {
+  display: none;
+  margin: 0;
+  padding: 4px 0 8px 16px;
+  list-style: none;
+  border-bottom: 1px solid var(--border);
+  background: var(--page-bg-alt);
+}
+
+.mobile-navigation__submenu.is-open {
+  display: grid;
+}
+
+.mobile-navigation__submenu a {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  padding: 10px 12px;
+  color: var(--ferguson-navy-700);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.mobile-navigation__submenu a[aria-current="page"] {
+  color: var(--ferguson-navy-800);
+  font-weight: 750;
+  text-decoration: underline;
+  text-decoration-color: var(--ferguson-yellow);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.mobile-navigation__panel nav > a[aria-current="page"] {
   border-bottom-color: var(--ferguson-yellow);
   color: var(--ferguson-navy-700);
 }
@@ -1561,6 +1619,14 @@ textarea {
   .home-hero__inner { padding-block: var(--space-6); }
   .home-hero__image { object-position: 62% center; }
   .home-hero__overlay { background: linear-gradient(90deg, rgb(0 20 48 / 91%) 0%, rgb(0 20 48 / 76%) 100%); }
+  .home-hero__inner { gap: 0; padding-bottom: 0; }
+  .home-hero__form-area {
+    width: calc(100% + (2 * var(--gutter-mobile)));
+    margin-inline: calc(-1 * var(--gutter-mobile));
+    padding: var(--space-5) var(--gutter-mobile) var(--space-6);
+    background: var(--page-bg-alt);
+  }
+  .home-hero__form-area .quote-form { max-width: 720px; }
   .home-hero h1 { font-size: clamp(2.25rem, 11vw, 2.75rem); }
   .home-hero__lead { font-size: 1rem; }
   .home-hero__actions { flex-direction: column; }

@@ -2,13 +2,14 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { Icon } from "./icons";
 
 export type NavigationItem = {
   href: string;
   label: string;
+  children?: NavigationItem[];
 };
 
 type MobileNavigationProps = {
@@ -17,12 +18,17 @@ type MobileNavigationProps = {
 
 export function MobileNavigation({ items }: MobileNavigationProps) {
   const [open, setOpen] = useState(false);
+  const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({});
+  const triggerRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
 
   useEffect(() => {
     if (!open) return;
     const closeOnEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setOpen(false);
+      if (event.key === "Escape") {
+        setOpen(false);
+        triggerRef.current?.focus();
+      }
     };
     document.addEventListener("keydown", closeOnEscape);
     return () => document.removeEventListener("keydown", closeOnEscape);
@@ -32,6 +38,7 @@ export function MobileNavigation({ items }: MobileNavigationProps) {
     <div className="mobile-navigation">
       <button
         className="mobile-navigation__trigger"
+        ref={triggerRef}
         type="button"
         aria-expanded={open}
         aria-controls="mobile-navigation-menu"
@@ -44,6 +51,39 @@ export function MobileNavigation({ items }: MobileNavigationProps) {
         <nav aria-label="Mobile navigation">
           {items.map((item) => {
             const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+            const hasChildren = Boolean(item.children?.length);
+            const expanded = expandedItems[item.href] ?? false;
+
+            if (hasChildren) {
+              const submenuId = `mobile-navigation-${item.label.toLowerCase().replaceAll(/[^a-z]+/g, "-")}`;
+              return (
+                <div className="mobile-navigation__item" key={item.href}>
+                  <button
+                    className="mobile-navigation__submenu-trigger"
+                    type="button"
+                    aria-expanded={expanded}
+                    aria-controls={submenuId}
+                    onClick={() => setExpandedItems((current) => ({ ...current, [item.href]: !expanded }))}
+                  >
+                    {item.label}
+                    <Icon className="mobile-navigation__chevron" name="chevron-down" width={18} height={18} />
+                  </button>
+                  <ul className={`mobile-navigation__submenu${expanded ? " is-open" : ""}`} id={submenuId}>
+                    {item.children?.map((child) => {
+                      const childActive = child.href === "/" ? pathname === "/" : pathname === child.href;
+                      return (
+                        <li key={child.href}>
+                          <Link href={child.href} aria-current={childActive ? "page" : undefined} onClick={() => setOpen(false)}>
+                            {child.label}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              );
+            }
+
             return (
               <Link key={item.href} href={item.href} aria-current={active ? "page" : undefined} onClick={() => setOpen(false)}>
                 {item.label}

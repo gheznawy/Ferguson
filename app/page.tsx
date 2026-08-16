@@ -133,7 +133,9 @@ export default function Home() {
                 ]}
               />
             </div>
-            <QuoteForm />
+            <div className="home-hero__form-area">
+              <QuoteForm />
+            </div>
           </div>
         </section>
 
