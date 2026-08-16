@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import navyIcon from "../Selected-Pictures-for-Website/Logos/Navy-Icon.png";
+import whiteIcon from "../Selected-Pictures-for-Website/Logos/White-Icon.png";
 import { businessName, getSiteUrl } from "@/lib/seo";
 
 import "@fontsource-variable/hanken-grotesk";
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
   applicationName: businessName,
   category: "HVAC services",
   icons: {
-    icon: [{ url: navyIcon.src, type: "image/png" }],
-    shortcut: navyIcon.src,
-    apple: navyIcon.src,
+    icon: [{ url: whiteIcon.src, type: "image/png" }],
+    shortcut: whiteIcon.src,
+    apple: whiteIcon.src,
   },
 };
 

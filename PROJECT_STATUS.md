@@ -78,7 +78,7 @@ Phase 13 is complete. All 25 launch routes have passed final visual, responsive,
 - [x] Self-referencing canonical URLs and explicit index/follow directives implemented across every public route
 - [x] Dynamic `sitemap.xml` implemented with exactly the 25 approved launch routes from `SITEMAP.md`
 - [x] Dynamic `robots.txt` implemented with public crawling allowed and sitemap discovery
-- [x] Sitewide Open Graph, social-sharing, application identity, and approved Navy-Icon favicon metadata implemented
+- [x] Sitewide Open Graph, social-sharing, application identity, and approved White-Icon favicon metadata implemented
 - [x] Conservative homepage `WebSite` and `HVACBusiness` JSON-LD implemented without an unverified address, operating days, price range, aggregate rating, or unsupported claims
 - [x] Structured data validated with the live Schema.org validator: 0 errors and 0 warnings
 - [x] Service-to-city, homepage-to-city, contact-to-city, Gallery, and Maintenance Plan internal-link coverage improved without adding new content blocks
