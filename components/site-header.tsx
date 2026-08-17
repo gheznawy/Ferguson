@@ -11,6 +11,7 @@ import { ButtonLink } from "./ui/button";
 export const primaryNavigation: NavigationItem[] = [
   { href: "/", label: "Home" },
   { href: "/services/", label: "Services" },
+  { href: "/gallery/", label: "Gallery" },
   { href: "/about/", label: "About" },
   { href: "/reviews/", label: "Reviews" },
   { href: "/service-area/", label: "Service Area" },
@@ -116,6 +117,22 @@ export function SiteHeader({ activePath = "" }: SiteHeaderProps) {
 
   return (
     <header className={`site-header${isHidden ? " site-header--hidden" : ""}`}>
+      <div className="maintenance-utility" aria-label="Maintenance Plan">
+        <div className="site-container maintenance-utility__inner">
+          <div className="maintenance-utility__primary">
+            <Icon name="thermostat" width={17} height={17} />
+            <p>HVAC Maintenance Plan <span aria-hidden="true">—</span> Keep Your System Running Smoothly</p>
+            <Link className="maintenance-utility__button" href="/maintenance-plan/">
+              View Plan
+              <Icon name="arrow-right" width={14} height={14} />
+            </Link>
+          </div>
+          <div className="maintenance-utility__trust" aria-label="Company trust points">
+            <span><Icon name="clock" width={15} height={15} />22 Years Experience</span>
+            <span><Icon name="shield" width={15} height={15} />Licensed &amp; Insured</span>
+          </div>
+        </div>
+      </div>
       <div className="site-container site-header__inner">
         <SiteLogo />
         <nav className="desktop-navigation" aria-label="Primary navigation">

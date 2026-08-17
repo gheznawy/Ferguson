@@ -100,12 +100,24 @@ export function MobileNavigation({ items }: MobileNavigationProps) {
               </Link>
             );
           })}
+          <Link
+            className="mobile-navigation__maintenance-plan"
+            href="/maintenance-plan/"
+            aria-current={pathname.startsWith("/maintenance-plan/") ? "page" : undefined}
+            onClick={() => setOpen(false)}
+          >
+            <Icon name="thermostat" width={20} height={20} />
+            <span>Maintenance Plan</span>
+            <Icon className="mobile-navigation__maintenance-arrow" name="arrow-right" width={18} height={18} />
+          </Link>
         </nav>
-        <a className="mobile-navigation__phone" href="tel:+17574067135">
-          <Icon name="phone" width={18} height={18} />
-          (757) 406-7135
-        </a>
-        <Link className="button button--primary" href="/contact/">Get a Free Quote</Link>
+        <div className="mobile-navigation__actions">
+          <a className="mobile-navigation__phone" href="tel:+17574067135">
+            <Icon name="phone" width={18} height={18} />
+            (757) 406-7135
+          </a>
+          <Link className="button button--primary" href="/contact/">Get a Free Quote</Link>
+        </div>
       </div>
     </div>
   );

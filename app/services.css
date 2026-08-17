@@ -75,6 +75,7 @@
 .services-catalog__secondary .service-card { min-height: 144px; padding: var(--space-3); }
 .services-catalog__secondary .service-card h3 { margin-top: 12px; font-size: 1rem; }
 .services-catalog__secondary .service-card__link { padding-top: 6px; }
+.services-catalog__toggle { display: none; }
 
 .services-diagnosis { padding-block: var(--space-8); background: var(--ferguson-navy-800); }
 
@@ -162,6 +163,9 @@
   .services-audiences__grid { grid-template-columns: 1fr; margin-top: var(--space-5); }
   .services-catalog__featured .service-card { min-height: 210px; padding: var(--space-3); }
   .services-catalog__secondary .service-card { min-height: 144px; }
+  .services-catalog__toggle { display: flex; width: 100%; margin-top: var(--space-3); }
+  .services-catalog__secondary { display: none; }
+  .services-catalog__secondary.is-visible { display: grid; }
   .services-diagnosis { padding-block: var(--space-6); }
   .services-diagnosis__photo { min-height: 430px; }
   .services-audience-card__photo { min-height: 260px; }

@@ -2,6 +2,7 @@ import { FinalCTA } from "@/components/final-cta";
 import { Icon } from "@/components/icons";
 import { MobileReviewList } from "@/components/mobile-review-list";
 import { SiteFooter } from "@/components/site-footer";
+import { TrustSignals } from "@/components/trust-signals";
 import { SiteHeader } from "@/components/site-header";
 import { ButtonLink } from "@/components/ui/button";
 import { createPageMetadata } from "@/lib/seo";
@@ -36,7 +37,7 @@ const googleReviews: ArchivedReview[] = [
 ];
 
 const facebookReviews: ArchivedReview[] = [
-  { name: "Dave Deuel", platform: "Facebook", date: "August 4 at 5:00 PM", recommendation: "Recommends Ferguson & Sons Mechanical LLC.", paragraphs: ["Our AC went out last night, so we called Chance Ferguson because several of our neighbors recommended him. He arrived this AM and fixed the issue (bad capacitor) in only a few minutes. He’s very knowledgeable and reasonably priced. I recommend him for any AC work."] },
+  { name: "Dave Deuel", platform: "Facebook", date: "August 4", recommendation: "Recommends Ferguson & Sons Mechanical LLC.", paragraphs: ["Our AC went out last night, so we called Chance Ferguson because several of our neighbors recommended him. He arrived this AM and fixed the issue (bad capacitor) in only a few minutes. He’s very knowledgeable and reasonably priced. I recommend him for any AC work."] },
   { name: "Juanita L Bishop", platform: "Facebook", date: "May 25", recommendation: "Recommends Ferguson & Sons Mechanical LLC.", paragraphs: ["Memorial Day and my A/C went out!!! Ferguson came to the rescue. When I tell you this guy knows the business! 25 plus years experience! Friendly, professional and most of all Honest and trustworthy\nTHANKS Ferguson and Sons!!"] },
   { name: "Jamie Lee", platform: "Facebook", date: "April 18", recommendation: "Recommends Ferguson & Sons Mechanical LLC.", paragraphs: ["We Highly recommend Chance Ferguson for any HVAC service you may need. Whether it’s routine maintenance or urgent need, he will do his best to fit you in. He gave us outstanding service and We are happy to say we found our new contact for any HVAC needs."] },
   { name: "William Peed", platform: "Facebook", date: "March 8", recommendation: "Recommends Ferguson & Sons Mechanical LLC.", paragraphs: ["Spring Maintenance for HVAC.", "Just had our spring HVAC maintenance done and wanted to give a shout out to Chance and Kara Ferguson. A friend recommended them after Chance helped with a repair and said he was on time, did great work, and was way more affordable than the big company they called at first.\nI called Kara and she got us scheduled just a couple days later on Sunday morning. Chance actually showed up a few minutes early, explained what he was going to do, and got right to work. He started in the attic cleaning the inside coil, then went outside and went through the whole unit.\nHe replaced our contactor (it was still the original on our 18-year-old unit and was slow to close), checked the capacitor, and gave the outdoor unit a full cleaning. He checked the refrigerant pressure and explained it was a little low. He measured the temps at the vents and it was only about a 10° difference after running for a while, so he added refrigerant. After letting it run about 20 more minutes the difference was up to around 19 or 20 from intake to vents, which is explained is right where it needs to be.\nHe also took pictures along the way and used them to explain what he found and what he fixed, which I really appreciated, especially since it was his first time working on our system.\nOverall he was on time, did solid work, and the price was very reasonable."] },
@@ -52,7 +53,7 @@ function ArchivedReviewCard({ review }: { review: ArchivedReview }) {
     <article className={`reviews-card reviews-card--${review.platform.toLowerCase()}`}>
       <header>
         <span className="reviews-card__platform"><Icon name={review.platform === "Google" ? "google" : "facebook"} width={22} height={22} /></span>
-        <div><h3>{review.name}</h3><p>{review.platform} · {review.date}</p></div>
+        <div><h3>{review.name}</h3><p>{review.platform === "Google" ? review.platform : `${review.platform} · ${review.date}`}</p></div>
       </header>
       {review.rating ? <Stars /> : <p className="reviews-card__recommendation"><Icon name="check" width={16} height={16} />{review.recommendation}</p>}
       {review.paragraphs ? (
@@ -76,8 +77,8 @@ export default function ReviewsPage() {
               <div className="reviews-hero__actions"><ButtonLink href="/contact/">Get a Free Quote</ButtonLink><ButtonLink href="tel:+17574067135" variant="outline" inverse><Icon name="phone" width={17} height={17} />Call Now</ButtonLink></div>
             </div>
             <div className="reviews-hero__summaries">
-              <a href="https://share.google/6VmLpJkW5oOySqGqF" target="_blank" rel="noreferrer"><span className="reviews-summary__icon"><Icon name="google" width={28} height={28} /></span><strong>5.0</strong><Stars /><small>11 Google Reviews</small></a>
-              <a href="https://www.facebook.com/profile.php?id=61586880370088" target="_blank" rel="noreferrer"><span className="reviews-summary__icon"><Icon name="facebook" width={28} height={28} /></span><strong>100%</strong><b>Recommend</b><small>5 Facebook Reviews</small></a>
+              <a href="https://share.google/6VmLpJkW5oOySqGqF" target="_blank" rel="noreferrer"><span className="reviews-summary__icon"><Icon name="google" width={28} height={28} /></span><strong>5.0</strong><Stars /></a>
+              <a href="https://www.facebook.com/profile.php?id=61586880370088" target="_blank" rel="noreferrer"><span className="reviews-summary__icon"><Icon name="facebook" width={28} height={28} /></span><strong>100%</strong><b>Recommend</b></a>
             </div>
           </div>
         </section>
@@ -97,6 +98,11 @@ export default function ReviewsPage() {
             <MobileReviewList id="facebook-review-list" collapsedLabel="See More Facebook Recommendations" platform="facebook">
               {facebookReviews.map((review) => <ArchivedReviewCard key={`${review.platform}-${review.name}`} review={review} />)}
             </MobileReviewList>
+          </div>
+        </section>
+        <section className="reviews-mobile-trust" aria-label="Company trust points">
+          <div className="site-container">
+            <TrustSignals variant="bar" />
           </div>
         </section>
       </main>

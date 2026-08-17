@@ -6,7 +6,7 @@ import diagnosisPhoto from "../../Selected-Pictures-for-Website/Services/02-serv
 import heroPhoto from "../../Selected-Pictures-for-Website/Services/01-services-hero-residential-ac-service.png";
 import residentialPhoto from "../../Selected-Pictures-for-Website/Services/03-services-residential-hvac.png";
 import { Icon, type IconName } from "@/components/icons";
-import { ServiceCard } from "@/components/service-card";
+import { ServicesCatalog } from "@/components/services-catalog";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { ButtonLink } from "@/components/ui/button";
@@ -124,12 +124,7 @@ export default function ServicesPage() {
         <section className="services-catalog" aria-labelledby="services-catalog-title">
           <div className="site-container">
             <SectionHeading eyebrow="Our Services" title="Complete HVAC Service, Repair & Installation" titleId="services-catalog-title" align="center" />
-            <div className="services-catalog__featured">
-              {featuredServices.map((service) => <ServiceCard key={service.href} {...service} />)}
-            </div>
-            <div className="services-catalog__secondary">
-              {secondaryServices.map((service) => <ServiceCard key={service.href} {...service} compact />)}
-            </div>
+            <ServicesCatalog featuredServices={featuredServices} secondaryServices={secondaryServices} />
           </div>
         </section>
 

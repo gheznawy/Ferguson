@@ -30,6 +30,7 @@ export function QuoteForm({
           <option value="maintenance">HVAC Maintenance</option>
           <option value="commercial">Commercial HVAC Service</option>
           <option value="replacement">HVAC Replacement & Installation</option>
+          <option value="maintenance-plan">Ferguson&apos;s Maintenance Plan</option>
           <option value="other">Other HVAC Service</option>
         </SelectField>
         <TextField id="city" name="city" label="City" autoComplete="address-level2" required />

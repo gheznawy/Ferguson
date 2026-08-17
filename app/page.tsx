@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import aboutPhoto from "../Selected-Pictures-for-Website/Homepage/08-home-about-family-rainbow.png";
 import heroPhoto from "../Selected-Pictures-for-Website/Homepage/01-home-hero-technician-bg.png";
+import mobileHeroPhoto from "../Selected-Pictures-for-Website/Mobile-Hero/mobile-hero.jpg";
 import serviceFeaturedPhoto from "../Selected-Pictures-for-Website/Homepage/02-home-services-featured-repair.png";
 import serviceUnitsPhoto from "../Selected-Pictures-for-Website/Homepage/03-home-services-units.png";
 import serviceTechnicianPhoto from "../Selected-Pictures-for-Website/Homepage/04-home-services-technician.png";
@@ -113,6 +114,7 @@ export default function Home() {
       <main>
         <section className="home-hero" aria-labelledby="home-hero-title">
           <Image className="home-hero__image" src={heroPhoto} alt="Ferguson & Sons technician servicing an outdoor HVAC unit" fill priority sizes="100vw" />
+          <Image className="home-hero__image home-hero__image--mobile" src={mobileHeroPhoto} alt="Ferguson & Sons technician servicing an outdoor HVAC unit" fill priority sizes="100vw" />
           <div className="home-hero__overlay" />
           <div className="site-container home-hero__inner">
             <div className="home-hero__content">

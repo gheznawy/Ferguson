@@ -194,6 +194,26 @@ Phase 13 is complete. All 25 launch routes have passed final visual, responsive,
 
 ## Last Meaningful Update
 
+**2026-08-17** — Added the existing shared `TrustSignals` loop between the Facebook recommendations and final CTA on `/reviews/` at mobile widths only. The wrapper preserves the shared strip’s motion, reduced-motion fallback, items, and styling while adding a compact 16px transition space above and below; tablet and desktop remain unchanged. Verified at 390px: visual order, active seamless loop, and no horizontal overflow; confirmed hidden at 834px. Lint, typecheck, and production build pass.
+
+**2026-08-17** — Refined the shared mobile navigation with a clean uncontained 46px hamburger/close target, the footer’s `#000a18` navy panel, high-contrast navigation and submenus, and Ferguson-yellow text-only active states. Unified the Maintenance Plan, phone, and quote actions at matching 52px dimensions while retaining their outlined/accented/primary hierarchy. Verified at 390px: menu open/close, both dropdown disclosures, no horizontal overflow, and matching action dimensions. Lint, typecheck, and production build pass.
+
+**2026-08-17** — Refined the desktop-only Maintenance Plan utility strip into a tighter 36px utility bar by reducing its type, View Plan pill, and internal gaps; the main white header remains unchanged. Verified at 1440px and 1280px with no wrapping or horizontal overflow; lint and typecheck pass.
+
+**2026-08-17** — Added a desktop-only Maintenance Plan utility strip above the shared header with verified 22 Years Experience and Licensed & Insured trust points, plus a distinct compact navy View Plan pill. Added a featured Maintenance Plan link after the regular mobile navigation links and before the phone/quote actions. Verified the strip and links at 1440px and 1280px, the featured mobile menu treatment at 390px, and no horizontal overflow. Lint, typecheck, and production build pass.
+
+**2026-08-17** — Removed the Google review and Facebook recommendation count labels from the Reviews hero summary cards. The centered card layout and existing responsive minimum heights remain in place to preserve balanced sizing and spacing.
+
+**2026-08-17** — Removed volatile relative dates from all archived Google review cards and removed the unnecessary time from Dave Deuel’s Facebook recommendation, retaining its August 4 date.
+
+**2026-08-17** — Added a mobile-only Services catalog disclosure after the HVAC Component Repair card. The existing secondary service cards are hidden initially on mobile, then revealed with a primary “See More Services” button that is removed after use; desktop and tablet grids remain unchanged. Lint and typecheck pass.
+
+**2026-08-17** — Refined the shared quote-form service selector typography and added Ferguson's Maintenance Plan immediately before Other HVAC Service in every quote form. Verified the rendered selector styling and option order on the Homepage, confirmed both Homepage and Contact use the shared form, and ran lint and typecheck successfully.
+
+**2026-08-17** — Updated the shared desktop header phone icon to render as a solid navy glyph, matching the approved Homepage hero reference. Verified visually at the approved 1320px desktop width.
+
+**2026-08-17** — Updated the shared header navigation to include Gallery after Services in desktop and mobile menus, refined desktop current-page, phone, and CTA treatments against the approved Homepage hero reference, and kept the first Homepage hero headline line unbroken at desktop widths. Verified desktop header/hero against the reference, active navigation states, Gallery navigation on desktop and mobile, and responsive 1440px, 834px, and 390px layouts without horizontal overflow; lint, typecheck, and production build pass.
+
 **2026-08-17** — Updated the shared `TrustSignals` component so every recurring trust treatment becomes a smooth, CSS-only horizontal loop on mobile. The duplicate animation list is hidden from assistive technology; reduced-motion users receive a clean static wrapping row. Desktop and tablet layouts remain unchanged. Verified the Homepage at 390px and 1440px with no horizontal overflow, confirmed all 18 routes using the component return the trust markup, then ran lint, typecheck, and production build successfully.
 
 **2026-08-17** — Updated the mobile hamburger Services and Service Area rows so the text links open their hub pages while the separate chevron buttons expand and collapse the existing nested links. Desktop navigation remains unchanged.
@@ -205,6 +225,10 @@ Phase 13 is complete. All 25 launch routes have passed final visual, responsive,
 **2026-08-17** — Added 24px of mobile-only breathing room below the Homepage hero trust signals, so the final Licensed & Insured item no longer sits against the quote-form band. Verified at 390px with no horizontal overflow; tablet and desktop remain unchanged.
 
 **2026-08-17** — Updated the Homepage hero on mobile only so the image-backed hero ends after the headline, copy, CTAs, and trust signals. The existing quote form now sits in a full-width clean light-gray band with its original fields, styling, and behavior preserved; desktop and tablet layout rules are unchanged.
+
+**2026-08-17** — Updated the Homepage hero to use the newly supplied portrait HVAC technician image at mobile widths only. Desktop and tablet retain the approved hero image, while the existing mobile overlay, content, trust signals, and quote-form band remain unchanged. Verified at 390px with no horizontal overflow or readability issue.
+
+**2026-08-17** — Refined the mobile Homepage portrait-hero framing by limiting the image layer to the existing image-backed content area and moving its focal point left. The technician and open HVAC equipment now share the 390px composition without changing the desktop/tablet image, mobile layout, or overlay.
 
 **2026-08-17** — Updated the mobile hamburger navigation so Services and Service Area are accessible expandable controls with rotating chevrons, 44px nested submenu links, and the exact existing desktop submenu destinations. Verified open/close behavior, keyboard interaction and Escape focus return, route navigation, menu closure after navigation, and no horizontal overflow at 390px and 320px; desktop navigation remains unchanged.
 
