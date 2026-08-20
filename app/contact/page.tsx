@@ -6,6 +6,7 @@ import { QuoteForm } from "@/components/quote-form";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { TrustSignals } from "@/components/trust-signals";
+import { ButtonLink } from "@/components/ui/button";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
@@ -49,6 +50,10 @@ export default function ContactPage() {
                 <ContactItem icon="clock" title="Hours"><p>8:00 AM–5:00 PM</p></ContactItem>
                 <ContactItem icon="location" title="Location & Service Area"><p>Based in Chesapeake, Virginia.</p><small>Serving Chesapeake, Virginia Beach, Norfolk, Portsmouth, Eastern Suffolk, and surrounding communities.</small></ContactItem>
               </ul>
+              <div className="contact-main__actions">
+                <ButtonLink href="tel:+17574067135"><Icon name="phone" width={18} height={18} />Call Now</ButtonLink>
+                <ButtonLink href="sms:+17574067135" variant="outline"><Icon name="message" width={18} height={18} />Text Us</ButtonLink>
+              </div>
             </div>
             <QuoteForm compact />
           </div>

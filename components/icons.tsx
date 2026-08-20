@@ -22,6 +22,7 @@ export type IconName =
   | "heat-pump"
   | "location"
   | "mail"
+  | "message"
   | "menu"
   | "phone"
   | "power"
@@ -70,6 +71,7 @@ export function Icon({ name, ...props }: IconProps) {
     "heat-pump": <><rect x="3" y="4" width="18" height="16" rx="2" /><circle cx="12" cy="12" r="5" /><path d="M12 9c2-2 4-1 4 1s-2 3-4 2M10 12c-2 2-1 4 1 4s3-2 2-4M12 10c-2-2-4-1-4 1s2 3 4 2" /></>,
     location: <><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" /><circle cx="12" cy="10" r="2.5" /></>,
     mail: <><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m4 7 8 6 8-6" /></>,
+    message: <path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.7 9.7 0 0 1-4.1-.9L3 20.5l1.4-4.2A8 8 0 0 1 3 11.5 8.5 8.5 0 0 1 12 3a8.5 8.5 0 0 1 9 8.5Z" />,
     menu: <><path d="M4 7h16M4 12h16M4 17h16" /></>,
     phone: <path d="M21 16.8v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 1.1 4 2 2 0 0 1 3.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L7 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c1 .3 2 .6 3 .7a2 2 0 0 1 1.6 1.9Z" />,
     power: <><path d="M12 2v10" /><path d="M5.6 5.6a9 9 0 1 0 12.8 0" /></>,

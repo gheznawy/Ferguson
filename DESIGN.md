@@ -800,7 +800,7 @@ If the business later changes the offer, update `business.md` first and let the 
 
 ### Benefits
 
-Three concise benefit rows with yellow check icons.
+Use the confirmed Maintenance Plan inclusions from `business.md` with yellow check icons. Keep the list concise; when the approved inclusions require more than three rows, use a compact two-column desktop list that stacks on mobile.
 
 ### CTAs
 

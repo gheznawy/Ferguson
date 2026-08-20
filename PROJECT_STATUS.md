@@ -194,6 +194,20 @@ Phase 13 is complete. All 25 launch routes have passed final visual, responsive,
 
 ## Last Meaningful Update
 
+**2026-08-21** — Added the owner-confirmed Maintenance Plan inclusions from the published Square checkout: seasonal maintenance services, heat-pump chemical cleaning and waxing, repair discount, priority scheduling, furnace cleaning, and included refrigerant. Updated `BUSINESS.md`, the Maintenance Plan benefits section, and the design specification so the expanded list remains compact and responsive. Lint, typecheck, production build, and rendered local-page checks pass.
+
+**2026-08-21** — Added the owner-supplied Adobe Maintenance Plan enrollment widget and Square hosted-checkout button to `/maintenance-plan/`. The owner later supplied raw embed code, which corrected the Adobe widget identifier’s final character (`0`, not `Q`), the supporting script endpoint (`embeddedWidget`), and the iframe URL’s trailing character. The page presents a clear form-first, purchase-second flow. Lint, typecheck, and rendered local-page checks pass.
+
+**2026-08-21** — Adjusted the Gallery dog photo’s focal point upward so its branded cap and face remain visible within the fixed landscape gallery crop. Lint and typecheck pass.
+
+**2026-08-20** — Added five owner-supplied original photos to the Gallery assets and distributed them among the existing work, team, and equipment images rather than grouping them together. Lint, typecheck, and production build pass.
+
+**2026-08-20** — Refined the Homepage hero’s mobile actions to retain its original two-row height: Get Scheduled Today spans the first row, with Call Now and Text Us sharing the second row. Desktop behavior remains unchanged. Lint passes.
+
+**2026-08-20** — Centered the Contact hero’s desktop trust-signal list within its hero container; the mobile trust-strip behavior remains unchanged. Lint passes.
+
+**2026-08-20** — Added dedicated `sms:+17574067135` Text Us actions only in the Homepage hero, Homepage Services section, and Contact page. The actions use the existing message icon and outline-button treatment, while mobile layouts stack the controls into full-width, touch-friendly buttons. Lint and typecheck pass.
+
 **2026-08-20** — Connected both scheduling forms to Netlify Forms through one `service-request` form. Added the required static HTML form definition for Netlify’s Next.js runtime, matching hidden form metadata, honeypot spam protection, URL-encoded AJAX submission, disabled sending state, and accessible success/error feedback. Netlify will record requests after redeployment; an owner must enable form detection and configure the email notification recipient in the Netlify dashboard. Lint, typecheck, and production build pass.
 
 **2026-08-20** — Fixed repeated Homepage scheduling CTA clicks after the URL already contains `#schedule-service`. The four Homepage CTAs now use a focused client-side anchor component that explicitly scrolls the form into view on every normal click, preserves reduced-motion behavior and standard modified-click anchor behavior, and keeps the form submit button unchanged. Lint, typecheck, and production build pass.

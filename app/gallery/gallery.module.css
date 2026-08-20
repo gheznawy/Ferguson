@@ -56,6 +56,10 @@
   object-fit: cover;
 }
 
+.dogPhoto img {
+  object-position: center 18%;
+}
+
 @media (max-width: 63.99rem) {
   .grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));

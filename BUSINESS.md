@@ -228,6 +228,17 @@ The owners have confirmed that the Ferguson & Sons HVAC Maintenance Plan is an a
 - **Equivalent to approximately $25 per month**
 - **2 professional maintenance visits per year**
 
+### Confirmed plan inclusions
+
+The owners' published Square checkout confirms these Maintenance Plan inclusions:
+
+- **Two included maintenance services: fall and summer cleaning** (**$190 value**)
+- **Chemical cleaning and waxing of heat pumps** (**$600 value**)
+- **15% off repairs**
+- **Priority scheduling**
+- **Furnace cleaning**
+- **Up to 1 lb of refrigerant included for maximum efficiency**
+
 ### Website positioning
 
 The plan should be presented as a simple preventative-care option designed to help customers:
@@ -244,9 +255,7 @@ The plan has a dedicated page at `/maintenance-plan/` and should also be cross-l
 Do not invent or imply unconfirmed plan details, including:
 
 - monthly billing availability or payment schedule beyond the stated monthly equivalent
-- priority scheduling
 - waived diagnostic fees
-- repair discounts
 - parts discounts
 - guaranteed response times
 - cancellation terms

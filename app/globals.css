@@ -1856,7 +1856,8 @@ textarea {
   .home-hero__form-area .quote-form { max-width: 720px; }
   .home-hero h1 { font-size: clamp(2.25rem, 11vw, 2.75rem); }
   .home-hero__lead { font-size: 1rem; }
-  .home-hero__actions { flex-direction: column; }
+  .home-hero__actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .home-hero__actions .button:first-child { grid-column: 1 / -1; }
   .home-hero__actions .button { width: 100%; }
   .home-hero .trust-signals { margin-top: var(--space-4); }
   .home-hero .trust-signals li { min-height: 44px; }

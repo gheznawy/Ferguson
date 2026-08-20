@@ -125,6 +125,7 @@ export default function Home() {
               <div className="home-hero__actions">
                 <ScheduleButtonLink>Get Scheduled Today <Icon name="arrow-right" width={18} height={18} /></ScheduleButtonLink>
                 <ButtonLink href="tel:+17574067135" variant="outline" inverse><Icon name="phone" width={18} height={18} />Call Now</ButtonLink>
+                <ButtonLink href="sms:+17574067135" variant="outline" inverse><Icon name="message" width={18} height={18} />Text Us</ButtonLink>
               </div>
               <TrustSignals
                 variant="inline"
@@ -160,6 +161,7 @@ export default function Home() {
               <div className="home-services__actions">
                 <ButtonLink href="/services/" variant="secondary">View All Services</ButtonLink>
                 <ButtonLink href="tel:+17574067135"><Icon name="phone" width={18} height={18} />Call Now</ButtonLink>
+                <ButtonLink href="sms:+17574067135" variant="outline"><Icon name="message" width={18} height={18} />Text Us</ButtonLink>
               </div>
             </div>
             <div className="service-collage" aria-label="Ferguson & Sons HVAC service work">
