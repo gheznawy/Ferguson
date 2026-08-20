@@ -74,7 +74,7 @@ export default function ReviewsPage() {
               <p className="section-eyebrow"><span aria-hidden="true" />Verified Customer Feedback</p>
               <h1 id="reviews-page-title">What Customers Say About Ferguson &amp; Sons</h1>
               <p>Read the Google reviews and Facebook recommendations preserved in the Ferguson &amp; Sons review archive.</p>
-              <div className="reviews-hero__actions"><ButtonLink href="/contact/">Get a Free Quote</ButtonLink><ButtonLink href="tel:+17574067135" variant="outline" inverse><Icon name="phone" width={17} height={17} />Call Now</ButtonLink></div>
+              <div className="reviews-hero__actions"><ButtonLink href="/contact/#schedule-service">Get Scheduled Today</ButtonLink><ButtonLink href="tel:+17574067135" variant="outline" inverse><Icon name="phone" width={17} height={17} />Call Now</ButtonLink></div>
             </div>
             <div className="reviews-hero__summaries">
               <a href="https://share.google/6VmLpJkW5oOySqGqF" target="_blank" rel="noreferrer"><span className="reviews-summary__icon"><Icon name="google" width={28} height={28} /></span><strong>5.0</strong><Stars /></a>

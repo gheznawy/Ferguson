@@ -117,7 +117,7 @@ Phase 13 is complete. All 25 launch routes have passed final visual, responsive,
 
 1. [x] Confirm when the final domain, hosting, and deployment decisions will be made — owner confirmed these decisions are planned within the next few days.
 2. [ ] Once selected, configure the production domain in `SITE_URL`, connect the hosting provider, and complete deployment.
-3. [ ] Select a form submission provider/destination and connect both quote forms; no provider or receiving address is currently approved.
+3. [ ] In Netlify, enable form detection after the next deploy and add the owners’ email address as a notification recipient for the `service-request` form.
 4. [ ] Decide whether static archived reviews remain the launch strategy or a credentialed live review provider will be added.
 5. [ ] Obtain owner/legal review of the drafted Privacy Policy and Terms of Service before public launch.
 
@@ -194,6 +194,14 @@ Phase 13 is complete. All 25 launch routes have passed final visual, responsive,
 
 ## Last Meaningful Update
 
+**2026-08-20** — Connected both scheduling forms to Netlify Forms through one `service-request` form. Added the required static HTML form definition for Netlify’s Next.js runtime, matching hidden form metadata, honeypot spam protection, URL-encoded AJAX submission, disabled sending state, and accessible success/error feedback. Netlify will record requests after redeployment; an owner must enable form detection and configure the email notification recipient in the Netlify dashboard. Lint, typecheck, and production build pass.
+
+**2026-08-20** — Fixed repeated Homepage scheduling CTA clicks after the URL already contains `#schedule-service`. The four Homepage CTAs now use a focused client-side anchor component that explicitly scrolls the form into view on every normal click, preserves reduced-motion behavior and standard modified-click anchor behavior, and keeps the form submit button unchanged. Lint, typecheck, and production build pass.
+
+**2026-08-20** — Updated every “Get Scheduled Today” CTA so Homepage instances smoothly scroll to the Homepage scheduling form, while every other sitewide/page CTA links to the Contact-page scheduling form. Added a shared `schedule-service` form anchor with sticky-header scroll offset; the form submit action remains unchanged. Rendered local HTML confirms four Homepage anchors and both form targets; lint, typecheck, and production build pass.
+
+**2026-08-20** — Replaced every public “Get a Free Quote” CTA with “Get Scheduled Today,” including shared header, footer, mobile navigation, final CTA, form heading/submit action, service and service-area templates, and page-specific actions. Removed the free-quote statement from Terms of Service and updated the business, sitemap, and design CTA guidance to prevent future copy drift. Repository-wide copy audit found no remaining public free-quote or free-estimate wording; lint, typecheck, and production build pass.
+
 **2026-08-17** — Added the existing shared `TrustSignals` loop between the Facebook recommendations and final CTA on `/reviews/` at mobile widths only. The wrapper preserves the shared strip’s motion, reduced-motion fallback, items, and styling while adding a compact 16px transition space above and below; tablet and desktop remain unchanged. Verified at 390px: visual order, active seamless loop, and no horizontal overflow; confirmed hidden at 834px. Lint, typecheck, and production build pass.
 
 **2026-08-17** — Refined the shared mobile navigation with a clean uncontained 46px hamburger/close target, the footer’s `#000a18` navy panel, high-contrast navigation and submenus, and Ferguson-yellow text-only active states. Unified the Maintenance Plan, phone, and quote actions at matching 52px dimensions while retaining their outlined/accented/primary hierarchy. Verified at 390px: menu open/close, both dropdown disclosures, no horizontal overflow, and matching action dimensions. Lint, typecheck, and production build pass.
@@ -233,3 +241,5 @@ Phase 13 is complete. All 25 launch routes have passed final visual, responsive,
 **2026-08-17** — Updated the mobile hamburger navigation so Services and Service Area are accessible expandable controls with rotating chevrons, 44px nested submenu links, and the exact existing desktop submenu destinations. Verified open/close behavior, keyboard interaction and Escape focus return, route navigation, menu closure after navigation, and no horizontal overflow at 390px and 320px; desktop navigation remains unchanged.
 
 **2026-08-17** — Completed Phase 13 final QA. Verified all 25 public routes across desktop, tablet, 390px mobile, and 320px narrow-mobile layouts; compared every approved page directly with its references; tested navigation, dropdowns, mobile menu, forms, disclosures, Gallery, maps, accessibility structure, focus visibility, links, production runtime, lint, typecheck, and build. Improved mobile tap areas and shortened related-service card minimums. Deployment, form-receiver, final CTA wording, operating-day, live-review, and legal-approval decisions remain intentionally unresolved.
+
+**2026-08-18** — Rebuilt the owner review package as a 37-page US Letter landscape PDF using section-aware pagination across the eight requested main pages (Home, Services, Gallery, About, Reviews, Service Area, Contact, and Maintenance Plan). Corrected the initially missing off-screen photo panels, restored the Home hero and service-collage imagery, captured both the Service Area and Home service-area maps in their loaded states, and replaced the Contact hero with its centered trust-strip state. The live website was only viewed and was not modified.

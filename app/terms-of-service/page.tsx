@@ -16,7 +16,7 @@ const sections = [
   },
   {
     title: "Quotes and Service Requests",
-    content: <><p>A website form, phone call, or request for a free quote is an inquiry only. It does not create an appointment, service agreement, price commitment, or guarantee of availability.</p><p>The scope, scheduling, pricing, and other terms of HVAC work must be confirmed directly with Ferguson &amp; Sons. Service availability also depends on whether the requested location falls within the regular coverage area.</p></>,
+    content: <><p>A website form, phone call, or scheduling request is an inquiry only. It does not create an appointment, service agreement, price commitment, or guarantee of availability.</p><p>The scope, scheduling, pricing, and other terms of HVAC work must be confirmed directly with Ferguson &amp; Sons. Service availability also depends on whether the requested location falls within the regular coverage area.</p></>,
   },
   {
     title: "Website Information",

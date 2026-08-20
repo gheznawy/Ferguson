@@ -34,7 +34,7 @@ export default function ServiceAreaPage() {
               <h1 id="area-hub-title">Local HVAC Service Across Chesapeake &amp; Beyond</h1>
               <p>Based in Chesapeake, Ferguson &amp; Sons Mechanical LLC regularly serves homes and businesses in Virginia Beach, Norfolk, Portsmouth, eastern Suffolk, and surrounding communities within the normal South Hampton Roads coverage area.</p>
               <div className="area-hub-hero__actions">
-                <ButtonLink href="/contact/">Get a Free Quote <Icon name="arrow-right" width={17} height={17} /></ButtonLink>
+                <ButtonLink href="/contact/#schedule-service">Get Scheduled Today <Icon name="arrow-right" width={17} height={17} /></ButtonLink>
                 <ButtonLink href="tel:+17574067135" variant="outline" inverse><Icon name="phone" width={17} height={17} />Call Now</ButtonLink>
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function ServiceAreaPage() {
         <section className="area-hub-guidance" aria-labelledby="area-guidance-title">
           <div className="site-container area-hub-guidance__layout">
             <div><p className="section-eyebrow">Not Sure About Your Address?</p><h2 id="area-guidance-title">Ask About Coverage</h2><p>Service availability outside the listed core areas depends on whether the address falls within the normal South Hampton Roads route. Share your city and service need, and the team can confirm coverage.</p></div>
-            <div><ButtonLink href="/contact/">Get a Free Quote</ButtonLink><ButtonLink href="tel:+17574067135" variant="outline"><Icon name="phone" width={17} height={17} />(757) 406-7135</ButtonLink></div>
+            <div><ButtonLink href="/contact/#schedule-service">Get Scheduled Today</ButtonLink><ButtonLink href="tel:+17574067135" variant="outline"><Icon name="phone" width={17} height={17} />(757) 406-7135</ButtonLink></div>
           </div>
           <div className="site-container"><TrustSignals variant="bar" /></div>
         </section>

@@ -65,7 +65,7 @@ export function SiteFooter() {
             <h2>Service Area</h2>
             <FooterLinks links={serviceAreaLinks} />
             <p className="site-footer__area-note">Serving South Hampton Roads and surrounding communities.</p>
-            <ButtonLink href="/contact/">Get a Free Quote</ButtonLink>
+            <ButtonLink href="/contact/#schedule-service">Get Scheduled Today</ButtonLink>
           </div>
         </div>
         <div className="site-footer__legal">

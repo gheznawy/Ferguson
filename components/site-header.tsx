@@ -203,7 +203,7 @@ export function SiteHeader({ activePath = "" }: SiteHeaderProps) {
             <Icon name="phone" width={19} height={19} />
             <span>(757) 406-7135</span>
           </a>
-          <ButtonLink href="/contact/">Get a Free Quote</ButtonLink>
+          <ButtonLink href="/contact/#schedule-service">Get Scheduled Today</ButtonLink>
         </div>
         <MobileNavigation items={mobileNavigation} />
       </div>

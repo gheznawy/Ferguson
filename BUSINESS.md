@@ -323,11 +323,11 @@ The strongest recurring positioning theme is:
 
 ## 9. Calls to action and lead generation
 
-**Primary CTA:** Get a Free Quote  
+**Primary CTA:** Get Scheduled Today  
 **Secondary CTA:** Call Now  
 **Phone:** (757) 406-7135
 
-**Free quotes:** Offered for services. Use this as a clear conversion action, but do not over-explain or over-promote the fact throughout every paragraph.
+**Scheduling CTA:** Use this as the clear primary conversion action. Do not describe quotes as free.
 
 Do not introduce competing primary CTA phrases across the site unless a page has a strong reason for a plan-specific action.
 

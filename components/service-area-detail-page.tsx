@@ -43,7 +43,7 @@ export function ServiceAreaDetailPage({ content }: { content: ServiceAreaDetailC
               <h1 id="area-detail-title">{content.title}</h1>
               <p className="area-detail-hero__lead">{content.lead}</p>
               <div className="area-detail-hero__actions">
-                <ButtonLink href="/contact/">Get a Free Quote <Icon name="arrow-right" width={17} height={17} /></ButtonLink>
+                <ButtonLink href="/contact/#schedule-service">Get Scheduled Today <Icon name="arrow-right" width={17} height={17} /></ButtonLink>
                 <ButtonLink href="tel:+17574067135" variant="outline"><Icon name="phone" width={17} height={17} />Call Now</ButtonLink>
               </div>
               <TrustSignals variant="inline" items={[{ label: "22 Years Experience", icon: "clock" }, { label: "Licensed & Insured", icon: "shield" }, { label: "Residential & Commercial", icon: "building" }]} />

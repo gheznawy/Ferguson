@@ -35,7 +35,7 @@ export default function AboutPage() {
               <p>Ferguson &amp; Sons Mechanical LLC is a family-owned and operated HVAC company based in Chesapeake, Virginia, serving homes and businesses throughout its regular South Hampton Roads service area.</p>
               <p>With 22 years of experience, Ferguson &amp; Sons focuses on dependable service, straightforward communication, diagnostics, repair, maintenance, and replacement when it makes sense.</p>
               <div className="about-hero__actions">
-                <ButtonLink href="/contact/">Get a Free Quote <Icon name="arrow-right" width={18} height={18} /></ButtonLink>
+                <ButtonLink href="/contact/#schedule-service">Get Scheduled Today <Icon name="arrow-right" width={18} height={18} /></ButtonLink>
                 <ButtonLink href="tel:+17574067135" variant="outline"><Icon name="phone" width={18} height={18} />Call Now</ButtonLink>
               </div>
             </div>

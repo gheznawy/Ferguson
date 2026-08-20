@@ -116,7 +116,7 @@ export function MobileNavigation({ items }: MobileNavigationProps) {
             <Icon name="phone" width={18} height={18} />
             (757) 406-7135
           </a>
-          <Link className="button button--primary" href="/contact/">Get a Free Quote</Link>
+          <Link className="button button--primary" href="/contact/#schedule-service">Get Scheduled Today</Link>
         </div>
       </div>
     </div>

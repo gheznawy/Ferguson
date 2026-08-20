@@ -26,7 +26,7 @@ export function FinalCTA({
           <p>{description}</p>
         </div>
         <div className="final-cta__actions">
-          <ButtonLink href="/contact/">Get a Free Quote</ButtonLink>
+          <ButtonLink href="/contact/#schedule-service">Get Scheduled Today</ButtonLink>
           <ButtonLink href="tel:+17574067135" variant="outline" inverse>
             <Icon name="phone" width={18} height={18} /> Call Now: (757) 406-7135
           </ButtonLink>

@@ -55,7 +55,7 @@ export function ServiceDetailPage({ content }: { content: ServiceDetailContent }
               <h1 id="service-detail-title">{content.title}</h1>
               <p className="service-detail-hero__lead">{content.lead}</p>
               <div className="service-detail-hero__actions">
-                <ButtonLink href="/contact/">Get a Free Quote <Icon name="arrow-right" width={17} height={17} /></ButtonLink>
+                <ButtonLink href="/contact/#schedule-service">Get Scheduled Today <Icon name="arrow-right" width={17} height={17} /></ButtonLink>
                 <ButtonLink href="tel:+17574067135" variant="outline"><Icon name="phone" width={17} height={17} />Call Now</ButtonLink>
               </div>
               <TrustSignals

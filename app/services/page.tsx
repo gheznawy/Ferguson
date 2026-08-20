@@ -105,7 +105,7 @@ export default function ServicesPage() {
               <p className="services-hero__subhead">For Homes &amp; Businesses Across South Hampton Roads</p>
               <p className="services-hero__description">From no-cooling diagnostics and routine maintenance to component repairs, commercial service, and system replacement when it makes sense, Ferguson &amp; Sons provides dependable HVAC solutions backed by 22 years of experience.</p>
               <div className="services-hero__actions">
-                <ButtonLink href="/contact/">Get a Free Quote</ButtonLink>
+                <ButtonLink href="/contact/#schedule-service">Get Scheduled Today</ButtonLink>
                 <ButtonLink href="tel:+17574067135" variant="outline" inverse>Call Now</ButtonLink>
               </div>
             </div>

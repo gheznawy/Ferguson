@@ -25,7 +25,7 @@ Keep the main navigation concise and consistent across the website:
 
 Primary header CTA:
 
-- **Get a Free Quote**
+- **Get Scheduled Today**
 
 Secondary contact action:
 
@@ -84,7 +84,7 @@ The main brand, trust, service overview, and conversion page. It should quickly 
 Residential and commercial customers, with a slight residential emphasis.
 
 **Primary CTA:**
-Get a Free Quote
+Get Scheduled Today
 
 **Secondary CTA:**
 Call Now
@@ -127,7 +127,7 @@ Call Now
 The primary overview page for all Ferguson & Sons HVAC services. It should help visitors quickly identify the service they need and route them to a dedicated service page.
 
 **Primary CTA:**
-Get a Free Quote
+Get Scheduled Today
 
 **Secondary CTA:**
 Call Now
@@ -165,7 +165,7 @@ Every service page should generally contain:
 - Maintenance Plan link when relevant
 - Service-area links
 - FAQ specific to that service
-- Get a Free Quote CTA
+- Get Scheduled Today CTA
 - Call Now CTA
 
 Do not force every service page into an identical content structure if the service requires different information.
@@ -180,7 +180,7 @@ Do not force every service page into an identical content structure if the servi
 A/C repair, cooling problems, no-cooling diagnosis, troubleshooting, and related residential/commercial service.
 
 **Primary CTA:**
-Get a Free Quote
+Get Scheduled Today
 
 **Important content themes:**
 
@@ -208,7 +208,7 @@ Get a Free Quote
 Preventative HVAC maintenance, seasonal tune-ups, cleaning, inspections, and keeping systems operating reliably.
 
 **Primary CTA:**
-Get a Free Quote
+Get Scheduled Today
 
 **Important content themes:**
 
@@ -237,7 +237,7 @@ Get a Free Quote
 Commercial HVAC service, diagnostics, repair, maintenance, and ongoing system support.
 
 **Primary CTA:**
-Get a Free Quote
+Get Scheduled Today
 
 **Important content themes:**
 
@@ -264,7 +264,7 @@ Get a Free Quote
 HVAC replacement, system changeouts, and new system installation.
 
 **Primary CTA:**
-Get a Free Quote
+Get Scheduled Today
 
 **Important content themes:**
 
@@ -292,7 +292,7 @@ Get a Free Quote
 Repair or replacement of specific HVAC components rather than entire systems.
 
 **Primary CTA:**
-Get a Free Quote
+Get Scheduled Today
 
 **Important content themes:**
 
@@ -320,7 +320,7 @@ Get a Free Quote
 Ductless mini-split installation, service, and repair.
 
 **Primary CTA:**
-Get a Free Quote
+Get Scheduled Today
 
 **Important content themes:**
 
@@ -346,7 +346,7 @@ Get a Free Quote
 Thermostat replacement, installation, and related controls support.
 
 **Primary CTA:**
-Get a Free Quote
+Get Scheduled Today
 
 **Important content themes:**
 
@@ -372,7 +372,7 @@ Get a Free Quote
 Indoor air quality products and solutions offered by Ferguson & Sons.
 
 **Primary CTA:**
-Get a Free Quote
+Get Scheduled Today
 
 **Approved service scope:**
 
@@ -403,7 +403,7 @@ Get a Free Quote
 Heat pump diagnostics, service, and repair.
 
 **Primary CTA:**
-Get a Free Quote
+Get Scheduled Today
 
 **Important content themes:**
 
@@ -430,7 +430,7 @@ Get a Free Quote
 Furnace diagnostics, service, and repair.
 
 **Primary CTA:**
-Get a Free Quote
+Get Scheduled Today
 
 **Important content themes:**
 
@@ -502,7 +502,7 @@ Do not infer monthly billing terms or invent membership perks, priority-service 
 Build trust through the real company story, family ownership, local roots, experience, and service philosophy.
 
 **Primary CTA:**
-Get a Free Quote
+Get Scheduled Today
 
 **Secondary CTA:**
 See Reviews or Call Now
@@ -536,7 +536,7 @@ See Reviews or Call Now
 Dedicated social-proof page using verified customer feedback.
 
 **Primary CTA:**
-Get a Free Quote
+Get Scheduled Today
 
 **Secondary CTA:**
 Call Now
@@ -570,7 +570,7 @@ Dynamic Google review integration may be added later if technically appropriate,
 Explain the regular Ferguson & Sons coverage area and route visitors to dedicated city pages.
 
 **Primary CTA:**
-Get a Free Quote
+Get Scheduled Today
 
 **Secondary CTA:**
 Call Now
@@ -619,7 +619,7 @@ Each city page should generally include:
 - Locally relevant review(s) where supported
 - Service-area / nearby-area context
 - FAQ
-- Get a Free Quote
+- Get Scheduled Today
 - Call Now
 - Internal links to relevant service pages
 
@@ -703,7 +703,7 @@ Do not imply unrestricted coverage of all Suffolk if the real service footprint 
 Show real Ferguson & Sons work, technicians, installations, maintenance, and company presence.
 
 **Primary CTA:**
-Get a Free Quote
+Get Scheduled Today
 
 **Suggested categories:**
 
@@ -880,7 +880,7 @@ Internal links should be useful to visitors first and SEO-supportive second.
 - Closely related service pages
 - Maintenance Plan when relevant
 - Relevant service-area pages
-- Contact / Get a Free Quote
+- Contact / Get Scheduled Today
 
 ## Service-area pages should link to:
 
@@ -899,7 +899,7 @@ Internal links should be useful to visitors first and SEO-supportive second.
 ## Reviews should link to:
 
 - Relevant services when contextually appropriate
-- Contact / Get a Free Quote
+- Contact / Get Scheduled Today
 
 ## Maintenance Plan should link to:
 
@@ -988,7 +988,7 @@ Do not use overly long URLs that attempt to include every keyword variation.
 
 ## Primary CTA
 
-**Get a Free Quote**
+**Get Scheduled Today**
 
 Use consistently across the site as the primary conversion action.
 

@@ -1,0 +1,87 @@
+[
+  {
+    "folder": "01-home",
+    "label": "HOME",
+    "files": [
+      "01-section.png",
+      "02-section.png",
+      "03-section.png",
+      "04-section.png",
+      "05-section.png",
+      "06-section.png",
+      "07-section.png",
+      "08-section.png",
+      "09-section.png"
+    ]
+  },
+  {
+    "folder": "02-services",
+    "label": "SERVICES",
+    "files": [
+      "01-section.png",
+      "02-section.png",
+      "03-section.png",
+      "04-section.png",
+      "05-section.png",
+      "06-section.png"
+    ]
+  },
+  {
+    "folder": "03-gallery",
+    "label": "GALLERY",
+    "files": [
+      "01-section.png",
+      "02-section.png",
+      "03-section.png"
+    ]
+  },
+  {
+    "folder": "04-about",
+    "label": "ABOUT",
+    "files": [
+      "01-section.png",
+      "02-section.png",
+      "03-section.png",
+      "04-section.png"
+    ]
+  },
+  {
+    "folder": "05-reviews",
+    "label": "REVIEWS",
+    "files": [
+      "01-section.png",
+      "02-section.png",
+      "03-section.png",
+      "04-section.png",
+      "05-section.png"
+    ]
+  },
+  {
+    "folder": "06-service-area",
+    "label": "SERVICE AREA",
+    "files": [
+      "01-section.png",
+      "02-section.png",
+      "03-section.png"
+    ]
+  },
+  {
+    "folder": "07-contact",
+    "label": "CONTACT",
+    "files": [
+      "01-section.png",
+      "02-section.png",
+      "03-section.png",
+      "04-section.png"
+    ]
+  },
+  {
+    "folder": "08-maintenance-plan",
+    "label": "MAINTENANCE PLAN",
+    "files": [
+      "01-section.png",
+      "02-section.png",
+      "03-section.png"
+    ]
+  }
+]

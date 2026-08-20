@@ -14,6 +14,7 @@ import { FinalCTA } from "@/components/final-cta";
 import { Icon, type IconName } from "@/components/icons";
 import { JsonLd } from "@/components/json-ld";
 import { QuoteForm } from "@/components/quote-form";
+import { ScheduleButtonLink } from "@/components/schedule-button-link";
 import { ServiceCard } from "@/components/service-card";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -122,7 +123,7 @@ export default function Home() {
               <h1 id="home-hero-title">Reliable HVAC Service &amp; Repair <small>From a Local Team You Can Trust!</small></h1>
               <p className="home-hero__lead">Family-owned with 22 years of experience, Ferguson &amp; Sons provides honest and dependable HVAC solutions for homes and businesses across South Hampton Roads.</p>
               <div className="home-hero__actions">
-                <ButtonLink href="/contact/">Get a Free Quote <Icon name="arrow-right" width={18} height={18} /></ButtonLink>
+                <ScheduleButtonLink>Get Scheduled Today <Icon name="arrow-right" width={18} height={18} /></ScheduleButtonLink>
                 <ButtonLink href="tel:+17574067135" variant="outline" inverse><Icon name="phone" width={18} height={18} />Call Now</ButtonLink>
               </div>
               <TrustSignals
@@ -187,7 +188,7 @@ export default function Home() {
               </figure>
               <div className="home-trust__actions">
                 <ButtonLink href="/reviews/" variant="outline">Read Reviews</ButtonLink>
-                <ButtonLink href="/contact/">Get a Free Quote</ButtonLink>
+                <ScheduleButtonLink>Get Scheduled Today</ScheduleButtonLink>
               </div>
             </div>
             <div className="home-trust__photo">
@@ -279,7 +280,7 @@ export default function Home() {
               </ul>
               <div className="business-hours"><Icon name="clock" width={20} height={20} /><div><strong>Business Hours</strong><span>8:00 AM–5:00 PM</span></div></div>
               <div className="home-area__actions">
-                <ButtonLink href="/contact/">Get a Free Quote</ButtonLink>
+                <ScheduleButtonLink>Get Scheduled Today</ScheduleButtonLink>
                 <ButtonLink href="tel:+17574067135" variant="outline" inverse>Call Now</ButtonLink>
               </div>
             </div>
@@ -307,7 +308,7 @@ export default function Home() {
               <aside className="faq-contact">
                 <h3>Still Have Questions?</h3>
                 <p>Our team is ready to provide the answers you need and schedule your service.</p>
-                <div><ButtonLink href="tel:+17574067135" variant="secondary"><Icon name="phone" width={17} height={17} />Call Us</ButtonLink><ButtonLink href="/contact/">Get a Free Quote <Icon name="arrow-right" width={17} height={17} /></ButtonLink></div>
+                <div><ButtonLink href="tel:+17574067135" variant="secondary"><Icon name="phone" width={17} height={17} />Call Us</ButtonLink><ScheduleButtonLink>Get Scheduled Today <Icon name="arrow-right" width={17} height={17} /></ScheduleButtonLink></div>
               </aside>
             </div>
             <div className="faq-list">

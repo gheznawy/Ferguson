@@ -294,7 +294,7 @@ Left to right:
 1. Ferguson & Sons logo
 2. navigation
 3. phone icon + `(757) 406-7135`
-4. yellow `Get a Free Quote` CTA
+4. yellow `Get Scheduled Today` CTA
 
 Navigation order:
 
@@ -382,7 +382,7 @@ border-radius: 6px;
 
 Examples:
 
-- Get a Free Quote
+- Get Scheduled Today
 - Call Now where shown as yellow
 - Read All Reviews
 - Learn About the Maintenance Plan
@@ -553,7 +553,7 @@ The first line is significantly larger than the second.
 
 Primary actions:
 
-- `Get a Free Quote`
+- `Get Scheduled Today`
 - `Call Now`
 
 Trust signals:
@@ -708,7 +708,7 @@ Large authentic customer/team photo with a compact Google 5.0 rating badge overl
 ### CTAs
 
 - outlined `Read Reviews`
-- yellow `Get a Free Quote`
+- yellow `Get Scheduled Today`
 
 ### Mobile
 
@@ -913,7 +913,7 @@ Do not turn this into a separate large card.
 
 ### CTAs
 
-- yellow `Get a Free Quote`
+- yellow `Get Scheduled Today`
 - outlined `Call Now`
 
 ### Map
@@ -964,7 +964,7 @@ The approved desktop screenshot intentionally allows a 3-line headline at this w
 - flatter styling; minimal shadow
 - content must not hug the left edge
 - dark `Call Us` button
-- yellow `Get a Free Quote` button
+- yellow `Get Scheduled Today` button
 
 ### FAQ panel
 
@@ -1033,7 +1033,7 @@ Supporting line:
 
 Actions:
 
-- yellow `Get a Free Quote`
+- yellow `Get Scheduled Today`
 - outlined `Call Now` / phone CTA
 
 ### Mobile
@@ -1112,7 +1112,7 @@ Vertical list:
 Supporting italic/muted line:
 `Serving South Hampton Roads and surrounding communities.`
 
-Compact yellow `Get a Free Quote` button below.
+Compact yellow `Get Scheduled Today` button below.
 
 ### Bottom legal row
 

@@ -792,6 +792,7 @@ textarea {
 
 .quote-form {
   position: relative;
+  scroll-margin-top: 112px;
   padding: var(--space-5);
   border-radius: var(--radius-lg);
   background: var(--surface);
@@ -898,6 +899,23 @@ textarea {
 .quote-form__submit {
   width: 100%;
   margin-top: var(--space-2);
+}
+
+.quote-form__honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.quote-form__status {
+  min-height: 24px;
+  margin-top: var(--space-2);
+  color: var(--text-body);
+  font-size: var(--type-small);
 }
 
 .service-card {
