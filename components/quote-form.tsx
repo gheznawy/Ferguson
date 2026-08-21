@@ -31,7 +31,7 @@ export function QuoteForm({
     formData.forEach((value, key) => body.append(key, String(value)));
 
     try {
-      const response = await fetch("/", {
+      const response = await fetch(form.action, {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: body.toString(),
@@ -51,6 +51,7 @@ export function QuoteForm({
       id="schedule-service"
       name="service-request"
       method="POST"
+      action="/netlify-forms.html"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       className={`quote-form${compact ? " quote-form--compact" : ""}`}

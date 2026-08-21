@@ -194,6 +194,8 @@ Phase 13 is complete. All 25 launch routes have passed final visual, responsive,
 
 ## Last Meaningful Update
 
+**2026-08-21** — Corrected Netlify Forms submission routing after detected forms did not record requests. Both visible scheduling forms now POST via AJAX to the dedicated static `/netlify-forms.html` endpoint rather than the Next.js homepage route, preventing a normal page response from being treated as a successful form submission. Lint and typecheck pass; redeploy and a real Netlify submission are required to verify the live handler.
+
 **2026-08-21** — Added the owner-confirmed Maintenance Plan inclusions from the published Square checkout: seasonal maintenance services, heat-pump chemical cleaning and waxing, repair discount, priority scheduling, furnace cleaning, and included refrigerant. Updated `BUSINESS.md`, the Maintenance Plan benefits section, and the design specification so the expanded list remains compact and responsive. Lint, typecheck, production build, and rendered local-page checks pass.
 
 **2026-08-21** — Added the owner-supplied Adobe Maintenance Plan enrollment widget and Square hosted-checkout button to `/maintenance-plan/`. The owner later supplied raw embed code, which corrected the Adobe widget identifier’s final character (`0`, not `Q`), the supporting script endpoint (`embeddedWidget`), and the iframe URL’s trailing character. The page presents a clear form-first, purchase-second flow. Lint, typecheck, and rendered local-page checks pass.
