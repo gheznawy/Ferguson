@@ -8,7 +8,7 @@ export const siteUrlEnvironmentVariable = "SITE_URL";
 export function getSiteUrl() {
   const configuredUrl = process.env[siteUrlEnvironmentVariable]?.trim();
 
-  if (!configuredUrl) return new URL("http://localhost:3000");
+  if (!configuredUrl) return new URL("https://fergusonsonsmechanical.com");
 
   try {
     return new URL(configuredUrl);
