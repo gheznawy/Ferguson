@@ -194,6 +194,20 @@ Phase 13 is complete. All 25 launch routes have passed final visual, responsive,
 
 ## Last Meaningful Update
 
+**2026-08-26** — Optimized the image delivery system without changing image presentation: the homepage hero now uses one art-directed responsive `<picture>` source instead of loading both desktop and mobile images; the Final CTA now uses `next/image` with its original `cover` crop (`center 56%`) and overlay rather than a direct raw CSS background; image responses negotiate AVIF with WebP fallback and a one-year cache TTL; and gallery/header-logo preloading was removed. Typecheck and production build pass; lint passes with the pre-existing Google-tag recommendation warning. Production route/image URL checks passed for all 26 public routes. Browser visual QA passed for the Homepage at desktop/tablet/mobile and Services, A/C Repair, Maintenance Plan, About, Gallery, Contact, and Service Area at their relevant breakpoints: no broken or distorted images, horizontal overflow, image crop/focal-point regression, or console errors were found.
+
+**2026-08-25** — Updated the Privacy Policy's Website and Technical Data section to disclose Google Analytics (GA4), related cookies and technologies, the categories of analytics data collected, and their use for traffic analysis and site improvement. Typecheck and lint pass.
+
+**2026-08-25** — Added the owner-supplied Ferguson & Sons social-preview image at `Selected-Pictures-for-Website/Social Preview/Ferguson-Sons-Website-Preview.png` and configured it as the sitewide Open Graph and large Twitter-card image. Typecheck, lint (one pre-existing Google-tag recommendation warning), and production build pass.
+
+**2026-08-25** — Updated the Homepage Maintenance Plan section to use the dedicated page's six owner-confirmed plan inclusions: seasonal cleaning, heat-pump chemical cleaning and waxing, repair discount, priority scheduling, furnace cleaning, and included refrigerant. The existing homepage section structure and styling were retained. Typecheck and lint pass.
+
+**2026-08-25** — Refined the shared scheduling-form feedback state. Successful submissions now show a clear, screen-reader-announced confirmation panel with a check icon; failed submissions receive an equally prominent alert with a direct call action. Typecheck passes; lint passes with the pre-existing Google-tag recommendation warning in `app/layout.tsx`.
+
+**2026-08-25** — Added the standalone, mobile-first `/links/` quick-links page for social, QR, and direct-link use. It uses the approved White Logo on a Ferguson navy surface and links to the verified phone, SMS, Contact scheduling form, homepage, Maintenance Plan, Google Business profile, and Facebook page. Added the route to the dynamic XML sitemap and documented its non-navigation role in `SITEMAP.md`. Typecheck and focused lint pass.
+
+**2026-08-25** — Added the Google tag for `G-EK3RB8YXT3` once in the App Router root layout head, so it is included on every current and future website page. A repository-wide audit found no prior Google Analytics or Google tag implementation. Lint and typecheck pass.
+
 **2026-08-21** — Corrected Netlify Forms submission routing after detected forms did not record requests. Both visible scheduling forms now POST via AJAX to the dedicated static `/netlify-forms.html` endpoint rather than the Next.js homepage route, preventing a normal page response from being treated as a successful form submission. Lint and typecheck pass; redeploy and a real Netlify submission are required to verify the live handler.
 
 **2026-08-21** — Added the owner-confirmed Maintenance Plan inclusions from the published Square checkout: seasonal maintenance services, heat-pump chemical cleaning and waxing, repair discount, priority scheduling, furnace cleaning, and included refrigerant. Updated `BUSINESS.md`, the Maintenance Plan benefits section, and the design specification so the expanded list remains compact and responsive. Lint, typecheck, production build, and rendered local-page checks pass.

@@ -20,7 +20,7 @@ const sections = [
   },
   {
     title: "Website and Technical Data",
-    content: <p>The website’s hosting and security services may process standard technical data such as IP address, browser type, device information, requested pages, and timestamps to deliver, secure, and maintain the site. The site may also use embedded or linked third-party services, including Google Maps, Google Business, and Facebook, which operate under their own privacy policies.</p>,
+    content: <p>The website’s hosting and security services may process standard technical data such as IP address, browser type, device information, requested pages, and timestamps to deliver, secure, and maintain the site. The website may also use Google Analytics (GA4) and related cookies or technologies to collect device and browser data, approximate location, pages visited, and website interactions for traffic analysis and site improvement. The site may also use embedded or linked third-party services, including Google Maps, Google Business, and Facebook, which operate under their own privacy policies.</p>,
   },
   {
     title: "Sharing and Retention",

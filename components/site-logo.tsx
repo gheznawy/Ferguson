@@ -17,7 +17,6 @@ export function SiteLogo({ inverted = false }: SiteLogoProps) {
         src={logo}
         alt="Ferguson & Sons Mechanical LLC"
         fill
-        priority={!inverted}
         sizes={inverted ? "184px" : "112px"}
       />
     </Link>

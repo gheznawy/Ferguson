@@ -1,0 +1,26 @@
+.page {
+  display: grid;
+  min-height: 100dvh;
+  padding: 40px 16px 32px;
+  place-items: center;
+  background: var(--ferguson-navy-950);
+  color: var(--text-on-dark);
+}
+.content { width: min(100%, 420px); }
+.brand { display: grid; justify-items: center; margin-bottom: 20px; text-align: center; }
+.logo { width: min(100%, 192px); height: auto; }
+.brand p { margin-top: 10px; color: var(--ferguson-yellow); font-size: 0.6875rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.socials { display: flex; width: 154px; box-sizing: border-box; justify-content: space-between; margin-top: 18px; padding: 4px 8px; border: 1px solid rgb(255 255 255 / 18%); border-radius: var(--radius-round); background: rgb(255 255 255 / 5%); }
+.socials a { display: grid; width: 40px; height: 40px; place-items: center; border-radius: 50%; color: var(--text-on-dark-muted); transition: background-color 160ms ease, color 160ms ease; }
+.socials a:hover { background: var(--ferguson-yellow); color: var(--ferguson-navy-800); }
+.links { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.link { display: grid; min-height: 54px; grid-template-columns: 24px 1fr 24px; align-items: center; gap: 10px; padding: 8px 16px; border: 1px solid rgb(255 255 255 / 24%); border-radius: var(--radius-sm); background: rgb(255 255 255 / 98%); box-shadow: 0 8px 20px rgb(0 10 24 / 14%); color: var(--ferguson-navy-800); font-family: var(--font-display); font-size: 1rem; font-weight: 700; line-height: 1.25; text-align: center; text-decoration: none; transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease; }
+.link:hover { border-color: var(--ferguson-yellow); background: #fff7e3; transform: translateY(-2px); }
+.link:focus-visible, .socials a:focus-visible { outline: 3px solid var(--ferguson-yellow); outline-offset: 3px; }
+.linkIcon, .arrow { color: var(--ferguson-navy-700); }
+.arrow { justify-self: end; }
+.primary { border-color: var(--ferguson-yellow); background: var(--ferguson-yellow); color: var(--ferguson-navy-800); }
+.primary:hover { border-color: #ffc13f; background: #ffc13f; }
+.footer { margin-top: 20px; color: var(--text-on-dark-muted); font-size: 0.75rem; text-align: center; }
+@media (min-width: 48rem) { .page { padding-block: 48px; } .brand { margin-bottom: 22px; } .links { gap: 12px; } .link { min-height: 56px; } }
+@media (prefers-reduced-motion: reduce) { .link, .socials a { transition: none; } }

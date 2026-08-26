@@ -83,13 +83,12 @@ export default function GalleryPage() {
         <section className={styles.gallery} aria-label="Ferguson & Sons HVAC work gallery">
           <div className="site-container">
             <div className={styles.grid}>
-              {galleryImages.map((image, index) => (
+              {galleryImages.map((image) => (
                 <figure className={`${styles.item}${image.className ? ` ${image.className}` : ""}`} key={image.src.src}>
                   <Image
                     src={image.src}
                     alt={image.alt}
                     fill
-                    priority={index < 4}
                     sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
                   />
                 </figure>

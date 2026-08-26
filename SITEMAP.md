@@ -757,6 +757,19 @@ Call (757) 406-7135
 
 ---
 
+# 12.5 Quick Links
+
+## Quick Links
+
+**URL:** `/links/`
+
+**Navigation:** Not included in the primary or footer navigation; intended for social-profile, QR-code, and direct-link use.
+
+**Role:**
+Mobile-first quick-access page for calling, texting, scheduling service, visiting the website, viewing the Maintenance Plan, and reaching the verified Google Business and Facebook profiles.
+
+---
+
 # 13. Legal pages
 
 ## Privacy Policy

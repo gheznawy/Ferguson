@@ -1,4 +1,5 @@
-import type { CSSProperties } from "react";
+import type { StaticImageData } from "next/image";
+import Image from "next/image";
 
 import { Icon } from "./icons";
 import { ButtonLink } from "./ui/button";
@@ -7,7 +8,7 @@ type FinalCTAProps = {
   eyebrow?: string;
   heading?: string;
   description?: string;
-  imageSrc?: string;
+  imageSrc?: StaticImageData;
 };
 
 export function FinalCTA({
@@ -16,9 +17,19 @@ export function FinalCTA({
   description = "Honest local HVAC service for homes and businesses across South Hampton Roads.",
   imageSrc,
 }: FinalCTAProps) {
-  const style = imageSrc ? ({ "--cta-image": `url("${imageSrc}")` } as CSSProperties) : undefined;
   return (
-    <section className={`final-cta${imageSrc ? " final-cta--image" : ""}`} style={style} aria-labelledby="final-cta-title">
+    <section className={`final-cta${imageSrc ? " final-cta--image" : ""}`} aria-labelledby="final-cta-title">
+      {imageSrc ? (
+        <Image
+          className="final-cta__image"
+          src={imageSrc}
+          alt=""
+          fill
+          sizes="100vw"
+          style={{ objectFit: "cover", objectPosition: "center 56%" }}
+        />
+      ) : null}
+      {imageSrc ? <div className="final-cta__overlay" aria-hidden="true" /> : null}
       <div className="site-container final-cta__inner">
         <div>
           <p className="section-eyebrow"><span aria-hidden="true" />{eyebrow}</p>

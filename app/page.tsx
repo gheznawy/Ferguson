@@ -1,4 +1,4 @@
-import Image, { type StaticImageData } from "next/image";
+import Image, { getImageProps, type StaticImageData } from "next/image";
 import Link from "next/link";
 
 import aboutPhoto from "../Selected-Pictures-for-Website/Homepage/08-home-about-family-rainbow.png";
@@ -103,6 +103,23 @@ function Photo({ src, alt, className, sizes }: { src: StaticImageData; alt: stri
   return <Image className={className} src={src} alt={alt} fill sizes={sizes} />;
 }
 
+function HomepageHeroImage() {
+  const common = {
+    alt: "Ferguson & Sons technician servicing an outdoor HVAC unit",
+    fill: true,
+    sizes: "100vw",
+  } as const;
+  const { props: desktop } = getImageProps({ ...common, src: heroPhoto, loading: "eager", fetchPriority: "high" });
+  const { props: mobile } = getImageProps({ ...common, src: mobileHeroPhoto, loading: "eager", fetchPriority: "high" });
+
+  return (
+    <picture>
+      <source media="(max-width: 767.99px)" srcSet={mobile.srcSet} sizes={mobile.sizes} />
+      <img {...desktop} className="home-hero__image" alt={common.alt} />
+    </picture>
+  );
+}
+
 function FeatureRow({ icon, children }: { icon: IconName; children: React.ReactNode }) {
   return <li><span><Icon name={icon} width={19} height={19} /></span><strong>{children}</strong></li>;
 }
@@ -114,8 +131,7 @@ export default function Home() {
       <SiteHeader activePath="/" />
       <main>
         <section className="home-hero" aria-labelledby="home-hero-title">
-          <Image className="home-hero__image" src={heroPhoto} alt="Ferguson & Sons technician servicing an outdoor HVAC unit" fill priority sizes="100vw" />
-          <Image className="home-hero__image home-hero__image--mobile" src={mobileHeroPhoto} alt="Ferguson & Sons technician servicing an outdoor HVAC unit" fill priority sizes="100vw" />
+          <HomepageHeroImage />
           <div className="home-hero__overlay" />
           <div className="site-container home-hero__inner">
             <div className="home-hero__content">
@@ -231,9 +247,12 @@ export default function Home() {
                 <span className="maintenance-price__visits"><Icon name="check" width={17} height={17} />2 maintenance visits per year</span>
               </div>
               <ul className="maintenance-benefits">
-                <li><Icon name="check" width={16} height={16} />Two professional maintenance visits each year</li>
-                <li><Icon name="check" width={16} height={16} />Help catch problems before they become expensive repairs</li>
-                <li><Icon name="check" width={16} height={16} />Keep your system operating reliably throughout the year</li>
+                <li><Icon name="check" width={16} height={16} />Two Included Maintenance Services: Fall &amp; Summer Cleaning ($190 Value)</li>
+                <li><Icon name="check" width={16} height={16} />Chemical Cleaning &amp; Waxing of Heat Pumps ($600 Value)</li>
+                <li><Icon name="check" width={16} height={16} />15% Off Repairs</li>
+                <li><Icon name="check" width={16} height={16} />Priority Scheduling</li>
+                <li><Icon name="check" width={16} height={16} />Furnace Cleaning</li>
+                <li><Icon name="check" width={16} height={16} />Up to 1 lb of Refrigerant Included for Maximum Efficiency</li>
               </ul>
               <div className="home-maintenance__actions">
                 <ButtonLink href="/maintenance-plan/">Learn About the Maintenance Plan</ButtonLink>
@@ -324,7 +343,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <FinalCTA imageSrc={heroPhoto.src} />
+      <FinalCTA imageSrc={heroPhoto} />
       <SiteFooter />
     </>
   );

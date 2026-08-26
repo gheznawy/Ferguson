@@ -84,10 +84,18 @@ export function QuoteForm({
         <Icon name="send" width={17} height={17} />
         {submissionState === "submitting" ? "Sending Request..." : "Get Scheduled Today"}
       </Button>
-      <p className="quote-form__status" aria-live="polite">
-        {submissionState === "success" ? "Thanks — your request has been sent. Ferguson & Sons will be in touch." : null}
-        {submissionState === "error" ? "We couldn’t send your request. Please call (757) 406-7135." : null}
-      </p>
+      {submissionState === "success" ? (
+        <p className="quote-form__status quote-form__status--success" role="status">
+          <Icon name="check" width={20} height={20} />
+          <span><strong>Request sent.</strong> Ferguson &amp; Sons will be in touch.</span>
+        </p>
+      ) : null}
+      {submissionState === "error" ? (
+        <p className="quote-form__status quote-form__status--error" role="alert">
+          <Icon name="alert" width={20} height={20} />
+          <span>We couldn&apos;t send your request. Please <a href="tel:+17574067135">call (757) 406-7135</a>.</span>
+        </p>
+      ) : null}
     </form>
   );
 }

@@ -31,6 +31,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
+      <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EK3RB8YXT3" />
+        <script>{`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-EK3RB8YXT3');`}</script>
+      </head>
       <body>
         <Script id="reset-scroll-on-load" strategy="beforeInteractive">
           {`(() => {

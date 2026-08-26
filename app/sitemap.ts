@@ -26,6 +26,7 @@ const publicRoutes = [
   "/service-area/suffolk-va/",
   "/gallery/",
   "/contact/",
+  "/links/",
   "/privacy-policy/",
   "/terms-of-service/",
 ] as const;

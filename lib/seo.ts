@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import socialImage from "../Selected-Pictures-for-Website/Logos/Original-Logo.png";
+import socialImage from "../Selected-Pictures-for-Website/Social Preview/Ferguson-Sons-Website-Preview.png";
 
 export const businessName = "Ferguson & Sons Mechanical LLC";
 export const siteUrlEnvironmentVariable = "SITE_URL";
@@ -51,12 +51,12 @@ export function createPageMetadata({ title, description, path }: PageMetadataInp
           url: socialImage.src,
           width: socialImage.width,
           height: socialImage.height,
-          alt: "Ferguson & Sons Mechanical LLC logo",
+          alt: "Ferguson & Sons Mechanical LLC HVAC services in Chesapeake, Virginia",
         },
       ],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title,
       description,
       images: [socialImage.src],

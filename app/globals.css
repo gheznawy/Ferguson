@@ -912,10 +912,43 @@ textarea {
 }
 
 .quote-form__status {
-  min-height: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
   margin-top: var(--space-2);
-  color: var(--text-body);
+  padding: 12px 14px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
   font-size: var(--type-small);
+  line-height: 1.45;
+}
+
+.quote-form__status svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+}
+
+.quote-form__status strong {
+  color: inherit;
+  font-weight: 750;
+}
+
+.quote-form__status--success {
+  border-color: #98d8b7;
+  background: #e9f7ef;
+  color: #075c36;
+}
+
+.quote-form__status--error {
+  border-color: #e6aaaa;
+  background: #fff0f0;
+  color: #8d1919;
+}
+
+.quote-form__status a {
+  color: inherit;
+  font-weight: 750;
+  text-underline-offset: 2px;
 }
 
 .service-card {
@@ -1060,12 +1093,23 @@ textarea {
 }
 
 .final-cta--image {
-  background-image: linear-gradient(rgb(0 40 85 / 84%), rgb(0 40 85 / 84%)), var(--cta-image);
-  background-position: center 56%;
-  background-size: cover;
+  isolation: isolate;
+}
+
+.final-cta__image,
+.final-cta__overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.final-cta__overlay {
+  z-index: 0;
+  background: rgb(0 40 85 / 84%);
 }
 
 .final-cta__inner {
+  position: relative;
+  z-index: 1;
   display: flex;
   min-height: 232px;
   align-items: center;
@@ -1838,9 +1882,7 @@ textarea {
 @media (max-width: 47.99rem) {
   .home-section { padding-block: var(--space-6); }
   .home-hero__inner { padding-block: var(--space-6); }
-  .home-hero__image:not(.home-hero__image--mobile) { display: none; }
-  .home-hero__image--mobile {
-    display: block;
+  .home-hero__image {
     height: 660px !important;
     object-position: 33% center;
   }
